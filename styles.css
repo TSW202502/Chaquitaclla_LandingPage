@@ -2,6 +2,32 @@ body {
     margin: 0;
 }
 
+/* Placeholder section for video about the team */
+#about-team-video {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#about-team-video h2 {
+    font-size: 36px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+#about-team-video h3 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 100px;
+    padding: 0px 20px;
+}
 
 /*About us section*/
 #about-us {
