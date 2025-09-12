@@ -1,3 +1,36 @@
 body {
     margin: 0;
 }
+nav {
+    background-color: #005F40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+nav a {
+    
+    float: left;
+    display: block;
+    color: white;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 15px;
+    text-decoration: none;
+}
+
+nav img {
+    max-height: 80px;
+}
+
+nav .left {
+    display: flex;
+    align-items: center;
+}
+.nav .right {
+    display: flex;
+    align-items: center;
+}
