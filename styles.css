@@ -1,3 +1,145 @@
 body {
     margin: 0;
 }
+
+/* Placeholder section for video about the team */
+#about-team-video {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#about-team-video h2 {
+    font-size: 36px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+#about-team-video h3 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 100px;
+    padding: 0px 20px;
+}
+
+/*About us section*/
+#about-us {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+#about-us h2{
+    font-size: 36px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+#about-us h3{
+    color:#FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+#about-us p{
+    color:#FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+
+
+#about-us  .our_team{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.our_team .team_member{
+    width: 250px;
+    margin:20px;
+    border-radius: 20px;
+    padding: 20px 10px;
+}
+
+
+.team_member:nth-child(even) {
+    background-color: #9A5D4E;
+}
+.team_member:nth-child(odd) {
+    background-color: #337D50;
+}
+
+
+/*Reviews Section*/
+.testimonial-container {
+    width: 60%;
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+}
+.testimonial-container h2 {
+    font-size: 36px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    width: 60%;
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+}
+.testimonial-slide {
+    display: none;
+}
+.testimonial-slide.active {
+    display: block;
+}
+.testimonial-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.testimonial-name {
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 10px;
+}
+.testimonial-text {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+}
+.testimonial-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.testimonial-arrows.left {
+    left: 10px;
+}
+.testimonial-arrows.right {
+    right: 10px;
+}
