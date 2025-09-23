@@ -13,3 +13,6 @@ function showTestimonial(n) {
     }
     slides[slideIndex - 1].classList.add("active");
 }
+document.getElementById('hamburgerBtn').addEventListener('click', function() {
+    document.getElementById('navMenu').classList.toggle('active');
+});
