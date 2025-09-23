@@ -408,11 +408,14 @@ flex-wrap: wrap;
 
 #contact-us {
     background: linear-gradient(to bottom, white 20%, #005F40 20%, #005F40 80%, white 80%);
+    min-height: 100vh;
+    width: 100vw;
     padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
     display: flex; 
-    justify-content: center; 
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
 }
@@ -721,5 +724,78 @@ footer {
     }
     nav {
         position: relative;
+    }
+}
+
+@media (max-width: 900px) {
+    #contact-us {
+        min-height: 100vh;
+        width: 100vw;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+    }
+    .info {
+        position: static;
+        right: 0;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    .form {
+        left: 0;
+        height: auto;
+        padding: 20px 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .form h2 {
+        font-size: 24px;
+    }
+    .form input[type="text"],
+    .form input[type="email"],
+    .form textarea {
+        font-size: 16px;
+        width: 100%;
+        padding: 8px;
+    }
+    .form button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}
+@media (max-width: 600px) {
+    #contact-us {
+        min-height: 100vh;
+        width: 100vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form h2 {
+        font-size: 18px;
+    }
+    .info h2 {
+        font-size: 18px;
+    }
+    .form input[type="text"],
+    .form input[type="email"],
+    .form textarea {
+        font-size: 14px;
+        padding: 6px;
+    }
+    .form button {
+        font-size: 16px;
+        padding: 6px 12px;
     }
 }
