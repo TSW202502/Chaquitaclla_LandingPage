@@ -607,56 +607,51 @@ footer {
 
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 0;
-    }
-    nav .left, nav .right {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        display: flex;
-    }
-    nav a {
-        padding: 10px 0;
-        font-size: 18px;
-        width: 100%;
-        text-align: left;
-    }
-    .centered-text {
-        position: static;
-        transform: none;
-        margin: 40px 0;
-    }
-    .centered-text h1 {
-        font-size: 28px;
-    }
-    .centered-text h2 {
-        font-size: 18px;
-    }
-    .white-button {
-        top: 0;
-        margin-top: 20px;
-    }
-    #home {
-        min-height: 60vh;
-    }
-    .image-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .image-item img {
-        max-width: 100%;
-        height: auto;
-    }
-    .ourSubs {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 100;
+        background: #005F40;
+        height: 60px;
     }
-    .subNum {
-        width: 90%;
-        margin-bottom: 20px;
+    .logo {
+        margin-left: 10px;
+        z-index: 101;
+    }
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: #005F40;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100vw;
+        height: calc(100vh - 60px);
+        overflow-y: auto;
+        z-index: 200;
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+    .nav-link {
+        font-size: 22px;
+        padding: 18px 0;
+        text-align: left;
+        margin-left: 30px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        z-index: 201;
     }
 }
 
@@ -682,5 +677,49 @@ footer {
     }
     .subNum h2, .subNum h1 {
         font-size: 18px;
+    }
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+}
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    nav .left, nav .right {
+        display: none !important;
+    }
+    nav.active .left, nav.active .right {
+        display: flex !important;
+        flex-direction: column;
+        background: #005F40;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100vw;
+        z-index: 99;
+        padding-bottom: 20px;
+    }
+    nav {
+        position: relative;
     }
 }
